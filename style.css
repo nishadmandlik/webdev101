@@ -1,3 +1,40 @@
 h1 {
 color: red;
 }
+
+header {
+  grid-area: hd;
+  background-color:pink;
+}
+
+nav {
+  grid-area: nv;
+  background-color: green;
+}
+
+sidebar {
+  grid-area: sideb;
+  background-color: yellow;
+}
+
+main {
+  grid-area: main;
+  background-color: tomato;
+}
+
+footer {
+  grid-area: foot;
+  background-color: steelblue;
+}
+
+.grid {
+  display: grid;
+  height:100vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 3fr 1fr 12fr 2fr;
+  grid-template-areas: 
+      "hd hd hd hd" 
+      "nv nv nv nv"
+      "sideb main main main"
+      "foot foot foot foot";
+}
